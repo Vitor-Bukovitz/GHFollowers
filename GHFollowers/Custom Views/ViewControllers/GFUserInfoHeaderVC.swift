@@ -56,24 +56,23 @@ class GFUserInfoHeaderVC: UIViewController {
     }
     
     func layoutUI() {
-        let padding: CGFloat = 20
         let textimagePadding: CGFloat = 12
         locationImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            avatarImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: padding),
-            avatarImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            avatarImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
+            avatarImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             avatarImageView.heightAnchor.constraint(equalToConstant: 90),
             avatarImageView.widthAnchor.constraint(equalToConstant: 90),
             
             usernameLabel.topAnchor.constraint(equalTo: avatarImageView.topAnchor),
             usernameLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: textimagePadding),
-            usernameLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            usernameLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             usernameLabel.heightAnchor.constraint(equalToConstant: 38),
             
             nameLabel.centerYAnchor.constraint(equalTo: avatarImageView.centerYAnchor, constant: 8),
             nameLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: textimagePadding),
-            nameLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            nameLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             nameLabel.heightAnchor.constraint(equalToConstant: 20),
             
             locationImageView.bottomAnchor.constraint(equalTo: avatarImageView.bottomAnchor),
@@ -83,12 +82,12 @@ class GFUserInfoHeaderVC: UIViewController {
             
             locationlabel.centerYAnchor.constraint(equalTo: locationImageView.centerYAnchor),
             locationlabel.leadingAnchor.constraint(equalTo: locationImageView.trailingAnchor, constant: 5),
-            locationlabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            locationlabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             locationlabel.heightAnchor.constraint(equalToConstant: 20),
             
             bioLbel.topAnchor.constraint(equalTo: avatarImageView.bottomAnchor, constant: textimagePadding),
             bioLbel.leadingAnchor.constraint(equalTo: avatarImageView.leadingAnchor),
-            bioLbel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            bioLbel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             bioLbel.heightAnchor.constraint(equalToConstant: 60),
         ])
     }
