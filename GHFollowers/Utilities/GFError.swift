@@ -1,8 +1,8 @@
 //
-//  ErrorMessage.swift
+//  GFError.swift
 //  GHFollowers
 //
-//  Created by Vitor Bukovitz on 3/7/21.
+//  Created by Vitor Bukovitz on 3/10/21.
 //
 
 import Foundation
